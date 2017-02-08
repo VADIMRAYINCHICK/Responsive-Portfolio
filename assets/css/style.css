@@ -315,7 +315,7 @@ input[type=submit] {
     position: fixed;
     width: 100%;
     
-    max-width: 410px
+    
   }
 
 nav, #logo{
@@ -323,9 +323,19 @@ width: 100%;
 }
 
   .main-section{
+    max-width: 298px;
+    margin: 20px;
     margin-top: 170px;
 
   }
+
+    .sidebar{
+      max-width: 230px;
+      margin-top: 170px;
+      margin-right: 20px; 
+    }
+
+  
  .work {
   margin-bottom: 20px;
  }
