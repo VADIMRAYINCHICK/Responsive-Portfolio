@@ -4,10 +4,21 @@ body {
   color: #777;
   line-height: 34px;
   background: url("../images/concrete_seamless.png");
+  height: 100%;
 }
+
+.container {
+  min-height: 100%;
+  
+  height: 100%;
+  margin: 0 auto -105px;
+}
+
+
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 
@@ -34,7 +45,7 @@ p:last-child {
 h1,
 h2,
 h3 {
-  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-family: 'Georgia', Times, 'Times New Roman', serif;
   color: #4aaaa5;
   font-weight: 700;
 }
@@ -55,21 +66,21 @@ h3 {
 /*header*/
 
 #masthead {
-  position: fixed;
+  
   z-index: 99;
-  margin: 0 0 30px;
+  margin: 0px;
   overflow: auto;
   width: 100%;
-  color: #fff;
-  background: #fff;
+  background-color: #fff;
+  
   border-bottom: 2px solid #ccc;
 }
 
 #logo {
-  width: 250px;
+  width: 350px;
   height: 90px;
   float: left;
-  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-family: 'Georgia', Times, 'Times New Roman', serif;
   text-align: center;
   line-height: 90px;
   color: #fff;
@@ -102,11 +113,12 @@ nav a:first-child {
 /*footer*/
 
 footer {
-  padding: 30px 0;
+ 
   clear: both;
   color: #fff;
   color: #ccc;
   font-size: 12px;
+  padding: 10px;
   text-align: center;
   background: #666;
   border-top: 8px solid #4aaaa5;
@@ -148,7 +160,9 @@ h3,
 /*main*/
 
 #main-container {
-  padding-top: 130px;
+  padding-top: 20px;
+  height: 1500px;
+  margin: 0 20 0 20px;
 }
 
 .main-section {
@@ -243,4 +257,84 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  body { }
+
+  
+  .main-container,
+  .sidebar
+
+  {
+
+    /* Box-model */
+    width: 100%;
+    padding: 10px;
+    max-width: 698px;
+   
+}
+.container
+
+{
+
+    /* Box-model */
+    width: 100%;
+   
+    max-width: 698px;
+   
+}
+  
+
+  .main-section{
+    padding-top: 20px;
+     max-width: 698px;
+
+  }
+
+  @media screen and (max-width: 640px) {
+
+  body { }
+
+  
+  #main-container,
+  #connect,  
+  {
+
+    /* Box-model */
+    width: 100%;
+    padding: 10px;
+    
+    max-width: 360px;
+
+  }
+
+  #masthead {
+    position: fixed;
+    width: 100%;
+    
+    max-width: 410px
+  }
+
+nav, #logo{
+width: 100%;
+}
+
+  .main-section{
+    margin-top: 170px;
+
+  }
+ .work {
+  margin-bottom: 20px;
+ }
+#connect1 {
+  width: 100%;
+    padding: 10px;
+    max-width: 
+}
+
+  
+
 }
